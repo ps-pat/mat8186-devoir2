@@ -263,14 +263,16 @@ class="math inline">p_2</span> tels que <span class="math inline">p_1 +
 p_2 = n</span>. La décomposition de Goldbach d’un entier <span
 class="math inline">n</span> est définie de manière non unique comme
 <span class="math display">g(n) = \begin{cases}
-           n &amp;\text{si } |n| \leq 2\\
-           \mathop{\mathrm{sgn}}(n) (p_1 + p_2 + (n \mod 2))
+           (\mathop{\mathrm{sgn}}(n), |n|, 0) &amp;\text{si } |n| \leq
+2\\
+           (\mathop{\mathrm{sgn}}(n), (p_1, p_2), n\!\! \mod 2)
 &amp;\text{sinon}
          \end{cases}</span> où <span
 class="math inline">\mathop{\mathrm{sgn}}</span> est la <a
 href="https://mathworld.wolfram.com/Sign.html">fonction signe</a>, <span
 class="math inline">p_1</span> et <span class="math inline">p_2</span>
-deux nombres premiers.</p>
+deux nombres premiers tels que <span class="math display">n =
+\mathop{\mathrm{sgn}}(n) (p_1 + p_2 + (n\!\!\!\! \mod 2))\,.</span></p>
 <h1 class="unnumbered" id="exercice-1">Exercice 1</h1>
 <p>Implémentez l’algorithme suivant dans une fonction nommée
 <code>leq_prime(n)</code>:</p>
